@@ -1,0 +1,130 @@
+{
+  "package": "EasyPostTracking",
+  "tagline": "Easy Post Tracking API",
+  "description": "EasyPost is a flexible, modern API that makes it easy to add shipping and tracking to your app. Sign up and start shipping. Thousands of developers already have.",
+  "image": "http:\/\/logo.clearbit.com\/easypost.com",
+  "repo": "https:\/\/github.com\/RapidSoftwareSolutions\/Marketplace-EasyPostTracking-package",
+  "keywords": [
+
+  ],
+  "accounts": {
+    "domain": "easypost.com",
+    "credentials": [
+      "apiKey"
+    ]
+  },
+  "blocks": [
+    {
+      "name": "trackPackage",
+      "description": "Create a new tracker to track a package, and get it's current transit status.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "The api key obtained from Easy Post.",
+          "required": true
+        },
+        {
+          "name": "trackingCode",
+          "type": "String",
+          "info": "The tracking code associated with the package you'd like to track",
+          "required": true
+        },
+        {
+          "name": "carrier",
+          "type": "String",
+          "info": "The carrier associated with the trackingCode you provided. The carrier will get auto-detected if none is provided",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "error"
+        }
+      ]
+    }, {
+      "name": "getTrackers",
+      "description": "Get all package tracked by the API key.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "The api key obtained from Easy Post.",
+          "required": true
+        },
+        {
+          "name": "trackingCode",
+          "type": "String",
+          "info": "Only returns Trackers with the given trackingCode",
+          "required": false
+        },
+        {
+          "name": "carrier",
+          "type": "String",
+          "info": "Only returns Trackers with the given carrier value",
+          "required": false
+        },
+        {
+          "name": "pageSize",
+          "type": "Number",
+          "info": "The number of Trackers to return on each page. The maximum value is 100",
+          "required": false
+        },
+        {
+          "name": "startDatetime",
+          "type": "String",
+          "info": "Only return Trackers created after this timestamp. Defaults to 1 month ago, or 1 month before a passed endDatetime. Format: 2016-01-02T00:00:00Z",
+          "required": false
+        },
+        {
+          "name": "endDatetime",
+          "type": "String",
+          "info": "Only return Trackers created after this timestamp. Defaults to 1 month ago, or 1 month before a passed startDatetime. Format: 2016-01-02T00:00:00Z",
+          "required": false
+        },
+        {
+          "name": "beforeId",
+          "type": "String",
+          "info": "Optional pagination parameter. Only trackers created before the given ID will be included. May not be used with afterId. Format: trk_",
+          "required": false
+        },
+        {
+          "name": "afterId",
+          "type": "String",
+          "info": "Optional pagination parameter. Only trackers created after the given ID will be included. May not be used with beforeId. Format: trk_",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "error"
+        }
+      ]
+    }, {
+      "name": "getTracker",
+      "description": "Get a package tracker by it's ID.",
+      "args": [
+        {
+          "name": "apiKey",
+          "type": "credentials",
+          "info": "The api key obtained from Easy Post.",
+          "required": true
+        },
+        {
+          "name": "trackingId",
+          "type": "String",
+          "info": "OUnique tracker ID. Format: trk_",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "error"
+        }
+      ]
+    }
+  ]
+}
