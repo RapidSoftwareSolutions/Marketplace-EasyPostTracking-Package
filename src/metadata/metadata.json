@@ -115,7 +115,7 @@
         {
           "name": "trackingId",
           "type": "String",
-          "info": "OUnique tracker ID. Format: trk_",
+          "info": "OUnique tracker ID. Use tracking ID or tracking code",
           "required": true
         }
       ],
