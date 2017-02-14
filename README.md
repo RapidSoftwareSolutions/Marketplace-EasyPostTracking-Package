@@ -1,3 +1,4 @@
+[![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.com/package/EasyPostTracking/functions?utm_source=RapidAPIGitHub_EasyPostTrackingFunctions&utm_medium=button&utm_content=RapidAPI_GitHub) 
 # EasyPostTracking Package
 EasyPost is a flexible, modern API that makes it easy to add shipping and tracking to your app. Sign up and start shipping. Thousands of developers already have.
 * Domain: easypost.com
