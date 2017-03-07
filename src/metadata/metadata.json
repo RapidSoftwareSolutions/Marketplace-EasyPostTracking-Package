@@ -37,12 +37,13 @@
           "required": false
         }
       ],
-      "callbacks": [
-        {
-          "name": "error",
-          "info": "error"
-        }
-      ]
+     "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
     }, {
       "name": "getTrackers",
       "description": "Get all package tracked by the API key.",
@@ -96,12 +97,13 @@
           "required": false
         }
       ],
-      "callbacks": [
-        {
-          "name": "error",
-          "info": "error"
-        }
-      ]
+     "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
     }, {
       "name": "getTracker",
       "description": "Get a package tracker by it's ID.",
@@ -119,12 +121,13 @@
           "required": true
         }
       ],
-      "callbacks": [
-        {
-          "name": "error",
-          "info": "error"
-        }
-      ]
+     "callbacks": [{
+        "name": "error",
+        "info": "Error"
+      }, {
+        "name": "success",
+        "info": "Success"
+      }]
     }
   ]
 }
