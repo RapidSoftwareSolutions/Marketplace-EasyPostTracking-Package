@@ -37,5 +37,5 @@ Get a package tracker by it's ID.
 | Field     | Type       | Description
 |-----------|------------|----------
 | apiKey    | credentials| The api key obtained from Easy Post.
-| trackingId| String     | OUnique tracker ID. Use tracking ID or tracking code
+| trackingId| String     | Unique tracker ID. Use tracking ID or tracking code
 

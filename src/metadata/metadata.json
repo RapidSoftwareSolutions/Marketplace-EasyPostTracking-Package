@@ -74,7 +74,7 @@
         },
         {
           "name": "startDatetime",
-          "type": "String",
+          "type": "DatePicker",
           "info": "Only return Trackers created after this timestamp. Defaults to 1 month ago, or 1 month before a passed endDatetime. Format: 2016-01-02T00:00:00Z",
           "required": false
         },
@@ -117,7 +117,7 @@
         {
           "name": "trackingId",
           "type": "String",
-          "info": "OUnique tracker ID. Use tracking ID or tracking code",
+          "info": "Unique tracker ID. Use tracking ID or tracking code",
           "required": true
         }
       ],
