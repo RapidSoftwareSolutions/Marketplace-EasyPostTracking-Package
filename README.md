@@ -26,8 +26,8 @@ Get all package tracked by the API key.
 | trackingCode | String     | Only returns Trackers with the given trackingCode
 | carrier      | String     | Only returns Trackers with the given carrier value
 | pageSize     | Number     | The number of Trackers to return on each page. The maximum value is 100
-| startDatetime| String     | Only return Trackers created after this timestamp. Defaults to 1 month ago, or 1 month before a passed endDatetime. Format: 2016-01-02T00:00:00Z
-| endDatetime  | String     | Only return Trackers created after this timestamp. Defaults to 1 month ago, or 1 month before a passed startDatetime. Format: 2016-01-02T00:00:00Z
+| startDatetime| String     | Only return Trackers created after this timestamp. Defaults to 1 month ago, or 1 month before a passed endDatetime. Format: 2016-01-02 00:00:00
+| endDatetime  | String     | Only return Trackers created after this timestamp. Defaults to 1 month ago, or 1 month before a passed startDatetime. Format: 2016-01-02 00:00:00
 | beforeId     | String     | Optional pagination parameter. Only trackers created before the given ID will be included. May not be used with afterId. Format: trk_
 | afterId      | String     | Optional pagination parameter. Only trackers created after the given ID will be included. May not be used with beforeId. Format: trk_
 

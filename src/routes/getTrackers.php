@@ -24,10 +24,12 @@ $app->post('/api/EasyPostTracking/getTrackers', function ($request, $response, $
         $query['page_size'] = $post_data['args']['pageSize'];
     };
     if (!empty($post_data['args']['startDatetime'])) {
-        $query['start_datetime'] = $post_data['args']['startDatetime'];
+        $dateTime = new DateTime($post_data['args']['startDatetime']);
+        $query['start_datetime'] = $dateTime->format('c');
     };
     if (!empty($post_data['args']['endDatetime'])) {
-        $query['end_datetime'] = $post_data['args']['endDatetime'];
+        $dateTime = new DateTime($post_data['args']['endDatetime']);
+        $query['end_datetime'] = $dateTime->format('c');
     };
     if (!empty($post_data['args']['beforeId'])) {
         $query['before_id'] = $post_data['args']['beforeId'];

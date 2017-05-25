@@ -80,7 +80,7 @@
         },
         {
           "name": "endDatetime",
-          "type": "String",
+          "type": "DatePicker",
           "info": "Only return Trackers created after this timestamp. Defaults to 1 month ago, or 1 month before a passed startDatetime. Format: 2016-01-02T00:00:00Z",
           "required": false
         },
